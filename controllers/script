@@ -1,0 +1,8 @@
+myvar=100
+while [ $myvar -ne 160 ]
+do
+     curl http://localhost:8000/logsign/$myvar
+     myvar=$(( $myvar + 1 ))
+done
+
+              
